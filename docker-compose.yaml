@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  ultrakill-game:
+    build: .
+    container_name: ultrakill-game
+    stdin_open: true  # Для интерактивного ввода
+    tty: true         # Для графики
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./leaderboard.txt:/app/leaderboard.txt
+    restart: unless-stopped
