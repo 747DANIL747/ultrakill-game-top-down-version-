@@ -49,6 +49,8 @@ class Leaderboard:
         
         # Ограничиваем топ-10
         leaderboard = leaderboard[:10]
+
+        os.makedirs("data", exist_ok=True)
         
         # Сохраняем в файл
         with open(self.file_path, 'w', encoding='utf-8') as f:
