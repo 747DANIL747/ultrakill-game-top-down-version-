@@ -50,4 +50,4 @@ COLORS = {
 }
 
 # Файлы
-LEADERBOARD_FILE = "leaderboard.txt"
+LEADERBOARD_FILE = "data/leaderboard.txt"
